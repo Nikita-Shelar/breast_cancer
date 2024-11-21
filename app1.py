@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 import joblib
 
 # Load the model and data
-model = joblib.load('model/random_forest_model.pkl')  # Ensure the correct model file is used
-data = pd.read_csv('data/breast_cancer_data.csv')  # Load breast cancer dataset
+model = joblib.load('random_forest_model.pkl')  # Ensure the correct model file is used
+data = pd.read_csv('breast_cancer_data.csv')  # Load breast cancer dataset
 
 # Clean and prepare the dataset
 data['diagnosis'] = data['diagnosis'].map({'M': 1, 'B': 0})  # Convert diagnosis to binary
