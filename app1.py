@@ -45,7 +45,7 @@ elif menu == "Prediction":
     for feature in feature_columns:
         user_input[feature] = st.number_input(
             f"{feature.replace('_', ' ').capitalize()}",
-            min_value=0.0, max_value=100.0, value=0.0, step=0.1
+            min_value=0.0, max_value=2000.0, value=0.0, step=0.1
         )
 
     # Convert user input to DataFrame
